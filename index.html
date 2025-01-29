@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AAiT Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">AAiT Survey Form</h1>
+      <P id="description">Thank you for taking the time to help us and give your information </p>
+    </header>
+    <form id="survey-form" class="abi">
+      <div class="input-element">
+        <label id="name-label" for="name">Name</label>
+        <input placeholder="Enter your name" id="name" type="text" class="form-control1" required>
+      </div>
+      <div class="input-element">
+        <label id="email-label" for="email">Email</label>
+        <input placeholder="Enter your email" id="email" type="email" class="form-control1" required>
+      </div>
+      <div class="input-element">
+        <label  id="number-label" for="number">Age</label>
+        <input placeholder="Age " id="number" type="number" min="6" max="100" class="form-control1" required>
+      </div>
+      <div class="chanbelala">
+        <label for="dropdown">Which option best describes your current role
+          <select id="dropdown" name="dropdown" class="hey">
+            <option value="">Select current role</option>
+            <option value="1"> Student</option>
+            <option value="2"> Full time job</option>
+            <option value="3"> Full time learner</option>
+            <option value="4"> Prefer not to say</option>
+            <option value="5"> Other</option>
+          </select>
+        </label>
+      </div>
+      <div class="chanbelala">
+        <p>Would you recommend AAiT to a friend?</p>
+        <div>
+          <input id="definitely" name="definitely-maybe-notsure" type="radio" value="definitely"checked><label for="definitely"> Definitely</label>
+        </div>
+        <div>
+          <input id="maybe" name="definitely-maybe-notsure" type="radio" value="maybe"><label for="maybe"> Maybe</label>
+        <div>
+          <input id="not sure" name="definitely-maybe-notsure" type="radio" value="not sure"><label for="not sure"> Not sure</label>
+        <div class="chanbelala">
+          <legend>What would you like to see improved? (Check all that apply)</legend>
+        <div>
+          <input id="civil engineering" type="checkbox" value="civil engineering courses"><label for="civil engineering"> Civil engineering courses</label>
+        </div>
+        <div>
+          <input id="software engineering" type="checkbox" value="software engineering courses"><label for="software engineering"> Software engineering courses</label>
+        </div>
+        <div>
+          <input id="biomedical engineering"  value="biomedical engineering courses" type="checkbox"><label for="biomedical engineering"> Biomedical engineering courses</label>
+        <div>
+          <input id="electrical engineering" type="checkbox" value="electrical engineering courses"><label for="electrical engineering"> Electrical engineering courses</label>
+        </div>
+        <div>
+          <input id="mechanical engineering" type="checkbox" value="mechanical engineering courses"><label for="mechanical engineering"> Mechanical engineering courses</label>
+        </div>
+        <div>
+          <input id="chemical engineering" type="checkbox" value="chemical engineering courses"><label for="chemical engineering"> Chemical engineering courses</label>
+        </div>
+        <div>
+          <input id="additional" type="checkbox" value="additional courses"><label for="additional"> Additional courses</label>
+        </div>
+      </div>
+      <div class="chanbelala">
+      <label>Any comments or suggestions?</label>
+      <textarea id="comment" name="comment" value="input-textarea" class="texta" rows="4" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div>
+        <input type="submit" value="submit" id="submit" class="ebrahim">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
